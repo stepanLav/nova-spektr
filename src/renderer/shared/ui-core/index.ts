@@ -11,8 +11,8 @@
  *   ✅ Phase 3 — Overlays (Dialog/Modal, Tabs, Accordion, Tooltip)
  *   ✅ Phase 3b — Feedback (Alert, Progress, ScrollArea)
  *   ✅ Phase 4 — Typography (unified Text + 10 named aliases)
- *   ⬜ Phase 5 — Complex (Select, Table, DateRangePicker, Combobox)
- *   ⬜ Phase 6 — Unification & Cleanup
+ *   ✅ Phase 5 — Complex (Select, Table, DateRangePicker, Combobox, Slider, Popover, Dropdown)
+ *   ✅ Phase 6 — Unification & Cleanup
  *   ⬜ Phase 7 — Dark Theme
  */
 
@@ -53,6 +53,54 @@ export { Tooltip, TooltipProvider, TooltipRoot, TooltipTrigger, TooltipContent }
 export { Alert, alertVariants } from './components/alert';
 export { Progress } from './components/progress';
 export { ScrollArea, ScrollBar } from './components/scroll-area';
+
+// ─── Complex Components ───────────────────────────────────────────────────────
+export { Combobox } from './components/combobox';
+export {
+  Table,
+  TableRoot,
+  TableHeader,
+  TableBody,
+  TableFooter,
+  TableRow,
+  TableHead,
+  TableCell,
+  TableCaption,
+  type SortDirection,
+  type Column,
+  type CellAlign,
+} from './components/table';
+export { DateRangePicker, type DateRangePickerProps, type DateRange } from './components/date-range-picker';
+export {
+  Slider,
+  SliderRoot,
+  SliderTrack,
+  SliderRange,
+  SliderThumb,
+} from './components/slider';
+export {
+  Popover,
+  PopoverRoot,
+  PopoverTrigger,
+  PopoverAnchor,
+  PopoverContent,
+} from './components/popover';
+export {
+  Dropdown,
+  DropdownMenuRoot,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuCheckboxItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuGroup,
+  DropdownMenuSub,
+  DropdownMenuSubTrigger,
+  DropdownMenuSubContent,
+  DropdownMenuPortal,
+  DropdownMenuRadioGroup,
+} from './components/dropdown';
 
 // ─── Typography ───────────────────────────────────────────────────────────────
 export {
