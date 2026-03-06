@@ -1,0 +1,100 @@
+/**
+ * Shadcn/UI compatible CSS variables
+ * Mapped from existing Nova Spektr design tokens (default.css)
+ *
+ * Format: H S% L% (no hsl() wrapper — shadcn convention)
+ * Source values from: src/renderer/app/styles/theme/default.css
+ */
+
+:root {
+  /* ─── Base ─────────────────────────────────────────────── */
+  --background: 240 14% 98%;          /* #f8f8fa — --background-default */
+  --foreground: 240 10% 24%;          /* #363643 — --text-primary */
+
+  /* ─── Card ─────────────────────────────────────────────── */
+  --card: 0 0% 100%;                  /* #ffffff */
+  --card-foreground: 240 10% 24%;     /* #363643 */
+
+  /* ─── Popover ───────────────────────────────────────────── */
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 24%;
+
+  /* ─── Primary (#4649f6 — brand blue/purple) ─────────────── */
+  --primary: 241 92% 62%;             /* #4649f6 */
+  --primary-foreground: 0 0% 100%;    /* white — --button-text */
+
+  /* ─── Secondary ─────────────────────────────────────────── */
+  --secondary: 240 2% 48%;            /* #79797d — --text-secondary */
+  --secondary-foreground: 240 10% 24%;
+
+  /* ─── Muted ─────────────────────────────────────────────── */
+  --muted: 240 14% 96%;               /* light gray bg */
+  --muted-foreground: 240 4% 67%;     /* #a4a4ad — --text-tertiary */
+
+  /* ─── Accent ─────────────────────────────────────────────── */
+  --accent: 238 87% 93%;              /* #e1e2fe — --badge-background */
+  --accent-foreground: 241 92% 62%;   /* #4649f6 — --tab-text-accent */
+
+  /* ─── Destructive ────────────────────────────────────────── */
+  --destructive: 346 91% 55%;         /* #f52163 — --text-negative */
+  --destructive-foreground: 0 0% 100%;
+
+  /* ─── Success / Positive ─────────────────────────────────── */
+  --success: 142 99% 33%;             /* #01a63e — --text-positive */
+  --success-foreground: 0 0% 100%;
+
+  /* ─── Warning ────────────────────────────────────────────── */
+  --warning: 35 93% 50%;              /* #f68f07 — --text-warning */
+  --warning-foreground: 0 0% 100%;
+
+  /* ─── Border ─────────────────────────────────────────────── */
+  --border: 240 26% 92%;              /* rgba(69, 69, 137, 0.12) ≈ */
+  --input: 240 26% 92%;
+  --ring: 241 92% 62%;                /* #4649f6 — focus ring */
+
+  /* ─── Radius ─────────────────────────────────────────────── */
+  --radius: 0.5rem;                   /* 8px — primary border radius */
+  --radius-sm: 0.25rem;               /* 4px */
+  --radius-pill: 2.125rem;            /* 34px — button pill radius */
+}
+
+/**
+ * Dark theme — TODO: Nova Spektr dark.css is empty, to be filled in Phase 7
+ * These are placeholder values mirrored from shadcn default dark theme
+ * and will need to be aligned with the actual Nova Spektr dark palette
+ */
+:root.dark {
+  --background: 240 10% 8%;
+  --foreground: 240 5% 96%;
+
+  --card: 240 10% 10%;
+  --card-foreground: 240 5% 96%;
+
+  --popover: 240 10% 10%;
+  --popover-foreground: 240 5% 96%;
+
+  --primary: 241 80% 68%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 240 4% 36%;
+  --secondary-foreground: 240 5% 96%;
+
+  --muted: 240 8% 18%;
+  --muted-foreground: 240 4% 60%;
+
+  --accent: 241 40% 24%;
+  --accent-foreground: 241 80% 78%;
+
+  --destructive: 346 80% 60%;
+  --destructive-foreground: 0 0% 100%;
+
+  --success: 142 70% 42%;
+  --success-foreground: 0 0% 100%;
+
+  --warning: 35 80% 56%;
+  --warning-foreground: 0 0% 100%;
+
+  --border: 240 8% 22%;
+  --input: 240 8% 22%;
+  --ring: 241 80% 68%;
+}

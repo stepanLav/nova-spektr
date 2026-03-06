@@ -1,4 +1,5 @@
 @import './styles/fonts.css' layer(base);
+@import './styles/theme/shadcn-tokens.css' layer(base);
 
 @import 'tailwindcss';
 
