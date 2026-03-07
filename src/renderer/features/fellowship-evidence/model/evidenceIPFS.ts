@@ -30,15 +30,7 @@ const fetchIPFSContentFx = createEffect(async ({ hash }: IPFSParams) => {
   }
 
   const evidence = evidenceService.getEvidenceFromCid(cid);
-  const ipfsUrl = evidenceService.getEvidenceIpfsUrl(evidence);
-
-  const response = await fetch(ipfsUrl.toString());
-
-  if (!response.ok) {
-    throw new Error('Failed to fetch evidence from IPFS');
-  }
-
-  const content = await response.text();
+  const content = await evidenceService.fetchFromIpfsWithFallback(evidence);
 
   return { evidence, content };
 });

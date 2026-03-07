@@ -25,8 +25,58 @@ function getEvidenceFromCid(cid: string): HexString {
   return `0x${Buffer.from(digest).toString('hex')}`;
 }
 
-function getEvidenceIpfsUrl(evidence: HexString) {
-  return new URL(`/ipfs/${getCidByEvidence(evidence)}`, 'https://subsquare.infura-ipfs.io');
+/**
+ * Ordered list of IPFS gateways to try when fetching evidence content.
+ * The first gateway is the primary one (subsquare's infura gateway);
+ * the rest are public fallbacks used when the primary times out or errors.
+ */
+const IPFS_GATEWAYS = [
+  'https://subsquare.infura-ipfs.io',
+  'https://cloudflare-ipfs.com',
+  'https://ipfs.io',
+  'https://dweb.link',
+  'https://gateway.pinata.cloud',
+] as const;
+
+/** Timeout per individual gateway request (ms). */
+const IPFS_GATEWAY_TIMEOUT_MS = 8_000;
+
+function getEvidenceIpfsUrl(evidence: HexString, gateway = IPFS_GATEWAYS[0]) {
+  return new URL(`/ipfs/${getCidByEvidence(evidence)}`, gateway);
+}
+
+/**
+ * Fetches IPFS content for the given evidence hash, trying each gateway in
+ * {@link IPFS_GATEWAYS} order. Returns the first successful response text.
+ *
+ * @throws {Error} when all gateways fail or are exhausted.
+ */
+async function fetchFromIpfsWithFallback(evidence: HexString): Promise<string> {
+  const cid = getCidByEvidence(evidence);
+  const errors: string[] = [];
+
+  for (const gateway of IPFS_GATEWAYS) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), IPFS_GATEWAY_TIMEOUT_MS);
+
+    try {
+      const url = new URL(`/ipfs/${cid}`, gateway);
+      const response = await fetch(url.toString(), { signal: controller.signal });
+
+      if (response.ok) {
+        return await response.text();
+      }
+
+      errors.push(`${gateway}: HTTP ${response.status} ${response.statusText}`);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      errors.push(`${gateway}: ${message}`);
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+
+  throw new Error(`Failed to fetch IPFS content from all gateways:\n${errors.join('\n')}`);
 }
 
 function getEvidenceUploadIpfsUrl() {
@@ -152,8 +202,10 @@ function isEvidenceTransaction(transaction: Transaction): transaction is Evidenc
 }
 
 export const evidenceService = {
+  IPFS_GATEWAYS,
   getEvidenceIpfsUrl,
   getEvidenceUploadIpfsUrl,
+  fetchFromIpfsWithFallback,
   getCidByEvidence,
   getEvidenceFromCid,
   getPromotionStartBlock,

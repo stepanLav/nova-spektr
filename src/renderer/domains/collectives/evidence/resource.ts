@@ -69,12 +69,7 @@ export const evidenceContentResource = createQueryResource<EvidenceContentReques
   key: ({ palletType, chainId, evidenceHash }) => [palletType, chainId, evidenceHash],
 })
   .request<EvidenceContent | null>(async ({ palletType, chainId, evidenceHash }) => {
-    const response = await fetch(evidenceService.getEvidenceIpfsUrl(evidenceHash));
-
-    if (response.status < 200 || response.status >= 300) {
-      throw new Error(`Failed to fetch evidence content: ${response.status} ${response.statusText}`);
-    }
-    const content = await response.text();
+    const content = await evidenceService.fetchFromIpfsWithFallback(evidenceHash);
 
     return {
       pallet: palletType,
