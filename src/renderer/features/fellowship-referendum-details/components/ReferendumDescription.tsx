@@ -2,7 +2,7 @@ import { memo } from 'react';
 
 import { useI18n } from '@/shared/i18n';
 import { nonNullable, nullable } from '@/shared/lib/utils';
-import { FootnoteText, Icon, SmallTitleText } from '@/shared/ui';
+import { Alert, Button, FootnoteText, Icon, SmallTitleText } from '@/shared/ui';
 import { Box, Markdown, Skeleton } from '@/shared/ui-kit';
 import { type Evidence, type Referendum, trackService } from '@/domains/collectives';
 import { useEvidenceContent } from '../hooks/useEvidenceContent';
@@ -18,17 +18,19 @@ type Props = {
 };
 
 export const ReferendumDescription = memo(({ referendum, evidence }: Props) => {
+  const { t } = useI18n();
   const { data: referendumMeta } = useMetadata(referendum);
-  const { data: evidenceContent, pending: pendingEvidenceContent } = useEvidenceContent({ referendum, evidence });
+  const { data: evidenceContent, pending: pendingEvidenceContent, error: evidenceError, retry } = useEvidenceContent({ referendum, evidence });
 
   const canHaveEvidence =
     nonNullable(referendum) &&
     nonNullable(referendumMeta) &&
     (trackService.isPromotionTrack(referendumMeta.track) || trackService.isRetentionTrack(referendumMeta.track));
 
-  const shouldRenderEvidence = nonNullable(evidenceContent) && !pendingEvidenceContent;
-  const shouldRenderEvidencePending = canHaveEvidence && nullable(evidenceContent) && pendingEvidenceContent;
-  const shouldRenderEvidenceAlert = canHaveEvidence && nullable(evidenceContent) && !pendingEvidenceContent;
+  const shouldRenderEvidence = nonNullable(evidenceContent) && !pendingEvidenceContent && !evidenceError;
+  const shouldRenderEvidencePending = canHaveEvidence && nullable(evidenceContent) && pendingEvidenceContent && !evidenceError;
+  const shouldRenderEvidenceError = canHaveEvidence && evidenceError;
+  const shouldRenderEvidenceAlert = canHaveEvidence && nullable(evidenceContent) && !pendingEvidenceContent && !evidenceError;
 
   return (
     <div className="flex h-full flex-col gap-4">
@@ -43,6 +45,25 @@ export const ReferendumDescription = memo(({ referendum, evidence }: Props) => {
         <Card>
           <Box padding={6}>
             <Markdown>{evidenceContent.content ?? ''}</Markdown>
+          </Box>
+        </Card>
+      ) : null}
+
+      {shouldRenderEvidenceError ? (
+        <Card>
+          <Box padding={6} gap={4} verticalAlign="center" horizontalAlign="center">
+            <Alert
+              active
+              variant="error"
+              title={t('fellowship.tasks.task.promotionVoting.ipfsLoadFailed')}
+            >
+              <Alert.Item withDot={false}>
+                {t('fellowship.tasks.task.promotionVoting.ipfsLoadFailedDescription')}
+              </Alert.Item>
+            </Alert>
+            <Button variant="fill" pallet="primary" size="md" onClick={retry}>
+              {t('fellowship.tasks.task.promotionVoting.ipfsRetry')}
+            </Button>
           </Box>
         </Card>
       ) : null}

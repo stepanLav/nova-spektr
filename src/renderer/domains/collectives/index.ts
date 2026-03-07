@@ -35,6 +35,7 @@ export type { CoreMember, Member } from './member/types';
 
 export { evidence } from './evidence/store';
 export { evidenceService } from './evidence/service';
+export { evidenceContentResource } from './evidence/resource';
 export {
   useEvidencePeriod,
   useEvidenceSummary,

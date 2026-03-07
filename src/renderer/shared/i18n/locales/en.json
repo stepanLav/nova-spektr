@@ -283,7 +283,7 @@
     "flexibleMultisig": {
       "assignControl": "Assign control",
       "assignControlDescription": "Your Multisig will be assigned to control Pure Proxy.",
-      "closeCreationDescription": "A pure proxy is being created and will appear as a proxied wallet. If you leave now, you’ll need to create the flexible multisig and assign control manually. Stay in the flow to complete flexible multisig wallet creation.",
+      "closeCreationDescription": "A pure proxy is being created and will appear as a proxied wallet. If you leave now, you'll need to create the flexible multisig and assign control manually. Stay in the flow to complete flexible multisig wallet creation.",
       "closeCreationTitle": "Do you want to close creation without saving?",
       "controlAssigned": "Control assigned",
       "createPureProxy": "Create Pure Proxy",
@@ -426,7 +426,7 @@
         "invalidPath": "Invalid path",
         "invalidPath_one": "Derivation path {invalidValues} is not valid, please check the file.",
         "invalidPath_other": "Derivation paths {invalidValues} are not valid, please check the file.",
-        "invalidRoot": "The public key doesn’t match.",
+        "invalidRoot": "The public key doesn't match.",
         "wrongShardsNumber": "Wrong shards number",
         "wrongShardsNumber_one": "Number of shards {invalidValues} is not valid, please check the file.",
         "wrongShardsNumber_other": "Numbers of shards {invalidValues} are not valid, please check the file."
@@ -602,7 +602,7 @@
     },
     "n/a": "N/A",
     "noAccount": "Account not found",
-    "noProfile": "Profile doesn’t exist",
+    "noProfile": "Profile doesn't exist",
     "overview": {
       "match": "match",
       "matches": "matches",
@@ -832,7 +832,7 @@
         "title": "Last call to submit retention report"
       },
       "normal": {
-        "description": "Be prepared to submit the report between {from} – {to}",
+        "description": "Be prepared to submit the report between {from} - {to}",
         "title": "Contribute according to rank requirements"
       },
       "referendumCreated": {
@@ -844,10 +844,10 @@
         "title": "Retention report submitted"
       },
       "timeline": {
-        "dangerZone": "Evidence submission deadline: {from} – {to}.\nYou risk not starting the referendum on time and falling out of the retention period.",
-        "safeZone": "Active work period.\nBe ready to submit retention report\n{from} – {to}",
+        "dangerZone": "Evidence submission deadline: {from} - {to}.\nYou risk not starting the referendum on time and falling out of the retention period.",
+        "safeZone": "Active work period.\nBe ready to submit retention report\n{from} - {to}",
         "submittedOn": "Retention report submitted\n{submissionDate}",
-        "warningZone": "Recommended period to submit the retention report\n{from} – {to}"
+        "warningZone": "Recommended period to submit the retention report\n{from} - {to}"
       },
       "timer": {
         "ensureAwareness": "Ensure fellows are aware of the report",
@@ -947,17 +947,17 @@
       },
       "modalTitle": "Evidence & Salary",
       "promotionApplied": "Applied for promotion:",
-      "promotionAppliedAlertDescription": "You are already uploaded evidence for promotion. If you want to add it for retention, you can upload it again — the previous one will be replaced.",
+      "promotionAppliedAlertDescription": "You are already uploaded evidence for promotion. If you want to add it for retention, you can upload it again - the previous one will be replaced.",
       "promotionAppliedAlertTitle": "Promotion evidence is uploaded",
       "promotionEvidenceModalTitle": "Submit your promotion evidence",
-      "promotionHelpRank1": "<li>Provide three examples of meaningful protocol contributions.</li><li>Actively design a deployable or future protocol component at PRP² standards.</li><li>Assist in analysis, formalization, or implementation at peer-reviewed or PRP standards.</li><li>Know Polkadot’s key goals and principles.</li><li>Examples: fixing key issues, enabling network fixes, proposing innovations, or improving protocol design.</li>",
+      "promotionHelpRank1": "<li>Provide three examples of meaningful protocol contributions.</li><li>Actively design a deployable or future protocol component at PRP² standards.</li><li>Assist in analysis, formalization, or implementation at peer-reviewed or PRP standards.</li><li>Know Polkadot's key goals and principles.</li><li>Examples: fixing key issues, enabling network fixes, proposing innovations, or improving protocol design.</li>",
       "promotionHelpRank2": "<li>Lead formalization, implementation, or analysis of a major protocol component, with peer-reviewed publication or justified exception.</li><li>Publish at least one long-form semi-technical article on Polkadot.</li>",
       "promotionHelpRank3": "<li>In-person review on contributions.</li><li>Defend Polkadot's role confidently.</li><li>Advocate via articles, social media, or events.</li><li>Share knowledge: forums, talks, or platforms.</li><li>Lead protocol design or implementation with review or deployment.</li>",
       "promotionHelpRank4": "<li>Play a key role in creating and formalizing a major protocol component, with formalization in a peer-reviewed publication or deployment in the protocol after expert code review.</li><li>Promote or defend Polkadot outside the ecosystem through a public presentation or notable media (e.g., journal or news).</li>",
       "promotionHelpRank5": "<li>Publish a long-form article on relevant technology beyond Polkadot.</li><li>Lead ideation, design, and formalization or prototyping of a major component.</li><li>Contribute to the creation of three other major components.</li><li>Assist in shaping the long-term technical roadmap through advocacy, research, or analysis.</li>",
       "promotionHelpRank6": "<li>Lead the design and implementation of a major protocol innovation.</li><li>Publish at least three long-form articles on relevant technology beyond Polkadot.</li><li>Discuss: What have you learnt from this individual which you might ultimately find useful in your efforts to help Polkadot succeed?</li>",
-      "promotionHelpRank7": "<li>Deepened understanding of Polkadot’s philosophy through discussion, literature parallels, or expert discourse.</li><li>Delivered major presentations on Polkadot to peers from other ecosystems or industries.</li><li>Discuss: Does the wider academic community or industry tend to learn from this individual (even if the individual did not discover this knowledge themselves)?</li>",
-      "promotionHelpRank8": "<li>Publish a canonical article on Polkadot’s philosophical principles.</li><li>Publish an industry-recognized article on a relevant innovation beyond Polkadot.</li><li>Be widely recognized as an intellectual leader beyond the Polkadot ecosystem.</li><li>Discuss: How did this individual's idea or invention become adopted in the wider academic community or industry?</li>",
+      "promotionHelpRank7": "<li>Deepened understanding of Polkadot's philosophy through discussion, literature parallels, or expert discourse.</li><li>Delivered major presentations on Polkadot to peers from other ecosystems or industries.</li><li>Discuss: Does the wider academic community or industry tend to learn from this individual (even if the individual did not discover this knowledge themselves)?</li>",
+      "promotionHelpRank8": "<li>Publish a canonical article on Polkadot's philosophical principles.</li><li>Publish an industry-recognized article on a relevant innovation beyond Polkadot.</li><li>Be widely recognized as an intellectual leader beyond the Polkadot ecosystem.</li><li>Discuss: How did this individual's idea or invention become adopted in the wider academic community or industry?</li>",
       "promotionHelpRank9": "<li>Generally recognised as a philosophical, social, artistic, political and/or technological heavyweight outside of blockchain or crypto.</li><li>Discuss: what outstanding service did the individual provide to the Polkadot network?</li>",
       "promotionNextRank": "Next promotion",
       "promotionRankHelpLabel": "What is expected from Rank {rank} ({name})",
@@ -1016,7 +1016,7 @@
       "active": "Active",
       "cardTitle": "Actions Required",
       "completed": "Completed",
-      "emptyDescription": "Great job! You’ve finished all available tasks.",
+      "emptyDescription": "Great job! You've finished all available tasks.",
       "emptyTitle": "All tasks completed",
       "general": "General",
       "labels": {
@@ -1047,9 +1047,12 @@
           "until": "Submit until {date}"
         },
         "promotionVoting": {
+          "ipfsLoadFailed": "Failed to load content from IPFS",
+          "ipfsLoadFailedDescription": "Could not retrieve evidence from any IPFS gateway.",
+          "ipfsRetry": "Retry",
           "mergedPullRequests": "Merged",
           "noEvidence": "No evidence provided",
-          "noEvidenceDescription": "This member didn’t submit evidence. Consider this when evaluating the request.",
+          "noEvidenceDescription": "This member didn't submit evidence. Consider this when evaluating the request.",
           "pullRequests": "PRs",
           "title": "Review promotion evidence"
         },
@@ -1645,10 +1648,10 @@
           "RECIPIENT_HAS_LESS_THAN_ED": "Recipient has less than ED",
           "UNKNOWN_ERROR": "Unknown error"
         },
-        "invalidDataDescription": "File couldn’t be read. Please check data formatting and try again.",
+        "invalidDataDescription": "File couldn't be read. Please check data formatting and try again.",
         "invalidDataRow": "Row {row}",
-        "invalidStructureDescription": "File couldn’t be read or contains invalid CSV structure. Check column headers and formatting, then try uploading again.",
-        "issueLine": "Row {row} — {path}: {message}",
+        "invalidStructureDescription": "File couldn't be read or contains invalid CSV structure. Check column headers and formatting, then try uploading again.",
+        "issueLine": "Row {row} - {path}: {message}",
         "issuesTitle": "Found {count} errors",
         "parsedFileDownloadDescription": "You can download parsed file to review them or open the preview. Please edit your file and upload it again.",
         "title": "CSV error",
@@ -1740,17 +1743,17 @@
         "signed": "signed"
       },
       "flexibleMultisigCreatedTitle": "New flexible multisig wallet added",
-      "flexibleMultisigDescription": "<strong>{name}</strong> on <chain /> with threshold { threshold } out of { signatoriesLength } signatories.",
+      "flexibleMultisigDescription": "<strong>{name}</strong> on <chain /> with threshold { threshold } out of { signatoriesLength } signatories.",
       "flexibleMultisigEditedTitle": "Flexible multisig has been edited",
-      "multisigCreatedDescription": "<strong>{name}</strong>  with threshold { threshold } out of { signatoriesLength }",
+      "multisigCreatedDescription": "<strong>{name}</strong>  with threshold { threshold } out of { signatoriesLength }",
       "multisigCreatedTitle": "New multisig wallet added",
       "multisigEventDetails": "by <wallet><walletIcon /><name>{name}</name></wallet>  on  <chain />",
       "multisigOperationDetails": "in <wallet><walletIcon /><name>{name}</name></wallet>  on  <chain />",
-      "proxyCreatedDetails": "<chain />  is now available for your <wallet><walletIcon /> {name}</wallet>  to control {operations}",
+      "proxyCreatedDetails": "<chain />  is now available for your <wallet><walletIcon /> {name}</wallet>  to control {operations}",
       "proxyCreatedTitle": "New delegated authority wallet added",
-      "proxyRemovedDetails": "<chain />  is no longer available for your <wallet><walletIcon /> {name}</wallet>  to control {operations}",
+      "proxyRemovedDetails": "<chain />  is no longer available for your <wallet><walletIcon /> {name}</wallet>  to control {operations}",
       "proxyRemovedTitle": "Delegated authority wallet has been removed",
-      "proxyWalletAction": "<strong>{name}</strong>  with <address><identicon /> {address}</address>",
+      "proxyWalletAction": "<strong>{name}</strong>  with <address><identicon /> {address}</address>",
       "status": {
         "created": "created",
         "executed": "executed",
@@ -1866,7 +1869,7 @@
       "info": {
         "accountsDescription": "Your accounts will be derived from the Vault and key derivation path. For each network a separate derivation path is used",
         "accountsTitle": "Where are my accounts?",
-        "vaultDescription": "Vault is the root key in the key hierarchy. It’s a key that is derived from the seed phrase without a derivation path",
+        "vaultDescription": "Vault is the root key in the key hierarchy. It's a key that is derived from the seed phrase without a derivation path",
         "vaultTitle": "What is the Vault?"
       },
       "manageTitle": "Set up your wallet",
@@ -1907,7 +1910,7 @@
     "welcome": {
       "ledgerDescription": "Ledger's the smartest way to secure, buy, exchange and grow your crypto assets",
       "ledgerTitle": "Ledger",
-      "novaWalletDescription": "Seamless and secure transaction signing with Nova Wallet, leading mobile application for Polkadot eco",
+      "novaWalletDescription": "Seamless and secure transaction signing with Nova Wallet, leading mobile application for Polkadot eco",
       "novaWalletTitle": "Nova Wallet",
       "polkadotExtensionDescription": "Multi-chain browser extension",
       "polkadotExtensionTitle": "Polkadot js extension",
@@ -2072,7 +2075,7 @@
         "rejected": "Operation rejected",
         "userRejected": "You rejected the request in WalletConnect."
       },
-      "expiredDescription": "The operation isn’t valid anymore",
+      "expiredDescription": "The operation isn't valid anymore",
       "failedDescription": "Scan with your mobile wallet to connect",
       "failedTitle": "Waiting for Reconnect...",
       "reconnect": {
@@ -2244,7 +2247,7 @@
       "proxyTypeExistError": "The same proxy already exists, choose another access type",
       "proxyTypeLabel": "Access type",
       "proxyTypePlaceholder": "Choose type",
-      "sameAsProxiedError": "Delegated account can’t be equal to delegating account",
+      "sameAsProxiedError": "Delegated account can't be equal to delegating account",
       "signatoryLabel": "Signatory",
       "signatoryPlaceholder": "Select signatory"
     },
@@ -2310,7 +2313,7 @@
   },
   "pureProxyRemove": {
     "warning": {
-      "inputHint": "Enter the sentence <i>“I understand that I will not be able to manage this wallet”</i> in the field above",
+      "inputHint": "Enter the sentence <i>"I understand that I will not be able to manage this wallet"</i> in the field above",
       "isCorrectProxyCheckbox": "I am certain that I am removing <strong>the correct delegated authority</strong> from this Pure Proxy",
       "isInaccessibleCheckbox": "I understand that once this delegated authority is removed then <strong>the pure proxy will become permanently inaccessible and cannot be restored</strong>",
       "isIrreversibleCheckbox": "I understand that this <strong>process is irreversible</strong> and cannot be undone",
@@ -2365,7 +2368,7 @@
     "hiddenWallets": {
       "allWallets": "All wallets",
       "emptyList": "List of hidden wallets is empty",
-      "emptyListDescription": "You haven’t hidden any wallets yet. All your wallets are currently visible in Wallet management.",
+      "emptyListDescription": "You haven't hidden any wallets yet. All your wallets are currently visible in Wallet management.",
       "modalTitle": "Hidden wallets",
       "nothingWasFound": "Nothing was found",
       "restore": "Restore",
@@ -2468,7 +2471,7 @@
     "qrCountdownTitle": "QR code valid for",
     "qrLegacyVaultTitle": "Legacy",
     "qrNewVaultTitle": "New (Vault v{version}+)",
-    "qrNotValid": "QR code isn’t valid anymore",
+    "qrNotValid": "QR code isn't valid anymore",
     "scanQrTitle": "Scan the operation QR code with Polkadot Vault",
     "scanSignatureTitle": "Scan QR code from Polkadot Vault",
     "signatureExpiredDescription": "For security reasons generated operations valid for only 5 mins. Please generate new QR code and sign it with Polkadot Vault",
@@ -2579,7 +2582,7 @@
       "hintTitle": "Learn more",
       "hintTitleStartStaking": "Learn more about rewards",
       "hintUnstakePeriod": "To unstake tokens you will have to wait for the ustaking period",
-      "hintWithdraw": "After unstaking period don’t forget to redeem your tokens",
+      "hintWithdraw": "After unstaking period don't forget to redeem your tokens",
       "notElectedValidators": "Not elected",
       "queueButton": "Add to operation queue",
       "restakeRewards": "Restake rewards",
@@ -2625,7 +2628,7 @@
       "networkDisabledLabel": "Network is inactive",
       "networkLabel": "Network",
       "networkPlaceholder": "Select network",
-      "noAccountsLabel": "Your haven’t got any account to start staking",
+      "noAccountsLabel": "Your haven't got any account to start staking",
       "noActiveWalletsDescription": "Please select a wallet for staking",
       "noActiveWalletsLabel": "No wallet selected",
       "noResultsDescription": "Please try another filter parameters",
@@ -2658,7 +2661,7 @@
     "submitSuccessSingle": "Operation success",
     "title": "Staking",
     "tooltips": {
-      "depositDescription": "The deposit stays locked on the depositor’s account until the multisig operation is executed or rejected",
+      "depositDescription": "The deposit stays locked on the depositor's account until the multisig operation is executed or rejected",
       "redeemAndUnstake": "Unstake - {countUnstake} account<br />Withdraw - {countWithdraw} account",
       "redeemDescription": "Your tokens are ready to be withdrawn",
       "redeemTitle": "Withdraw",
@@ -2794,7 +2797,7 @@
     "myselfButton": "Myself",
     "networkConnectionError": "The {network} network is not connected. Go to Settings → Network to select a different RPC endpoint.",
     "networkDeposit": "Multisig deposit",
-    "networkDepositHint": "The deposit stays locked on the depositor’s account until the multisig operation is executed or rejected",
+    "networkDepositHint": "The deposit stays locked on the depositor's account until the multisig operation is executed or rejected",
     "networkFee": "Network fee",
     "noAmount": "Please provide amount",
     "noInitiatorError": "Please select operation initiator",
@@ -2855,7 +2858,7 @@
           "UNKNOWN_ERROR": "Unknown error"
         },
         "invalidDataRow": "Row {row}",
-        "invalidStructureDescription": "File couldn’t be read or contains invalid CSV structure. Check column headers and formatting, then try uploading again.",
+        "invalidStructureDescription": "File couldn't be read or contains invalid CSV structure. Check column headers and formatting, then try uploading again.",
         "parsedFileDownloadDescription": "You can download parsed file to review them or open the preview. Please edit your file and upload it again.",
         "warningTitle_one": "Found {count} warning",
         "warningTitle_other": "Found {count} warnings"
@@ -2946,7 +2949,7 @@
       "hideButton": "Hide",
       "hideWallet": "Hide wallet",
       "keyTabTitle": "Keys",
-      "linkedWalletsWillBeRemovedDescription": "This wallet is a signatory in multisigs or as a proxy for other wallets. These related accounts will be automatically hidden. They’ll reappear if you pair this wallet again.",
+      "linkedWalletsWillBeRemovedDescription": "This wallet is a signatory in multisigs or as a proxy for other wallets. These related accounts will be automatically hidden. They'll reappear if you pair this wallet again.",
       "linkedWalletsWillBeRemovedTitle": "Linked wallets will be removed",
       "nameExistsError": "This wallet name already exists",
       "nameRequiredError": "Name is required",
@@ -2996,7 +2999,7 @@
       "on": "on",
       "otherSignatories_one": "Other signatory { count }",
       "otherSignatories_other": "Other signatories { count }",
-      "pendingOperations": "This multisig wallet has pending operations. Hiding it won’t cancel them. You can restore it anytime from Settings.",
+      "pendingOperations": "This multisig wallet has pending operations. Hiding it won't cancel them. You can restore it anytime from Settings.",
       "signatoriesGroup": "Signatories { amount }",
       "signatoriesTab": "Signatories",
       "singleChainTitle": "via  <wallet />  {walletName} on  <chain /> chain with threshold { threshold } out of { signatories } signatories",
